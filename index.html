@@ -546,13 +546,55 @@
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="contact-form pt-30">
-                        <form id="contact-form"  action="##">
+                    <div class="contact-form pt-30" data-form-type="formoid">
+                    <div data-form-alert="" hidden="">Enviado com sucesso!</div>
+					
+					<!--
+					<form class="single-form" action="##" method="post" data-form-title="Mobirise Form">
+                    <input type="hidden" name="email" data-form-email="true" value="##">
+                        <div class="row row-sm-offset">
+                            <div class="col-md-6 multi-horizontal" data-for="name">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-1"></label>
+                                    <input type="text" class="md-input style-02" name="name" data-form-field="Nome/Empresa" required="" id="name-form1-1" placeholder="Nome">
+                                </div>
+                            </div>
+                            <div class="col-md-6 multi-horizontal" data-for="email">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="email-form1-1"></label>
+                                    <input type="email" class="md-input style-02" name="email" data-form-field="Email" required="" id="email-form1-1" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 multi-horizontal" data-for="name">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-1"></label>
+                                    <input type="text" class="md-input style-02" name="title" data-form-field="Assunto" required="" id="name-form1-1" placeholder="Assunto">
+                                </div>
+                            </div>
+                            <div class="col-md-6 multi-horizontal" data-for="phone">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-1"></label>
+                                    <input type="tel" class="md-input style-02" name="phone" data-form-field="Telefone" id="phone-form1-1" placeholder="Telefone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" data-for="message">
+                            <label class="form-control-label mbr-fonts-style display-7" for="message-form1-1"></label>
+                            <textarea type="text" class="md-input style-02" name="message" rows="7" data-form-field="Mensagem" id="message-form1-1" placeholder="Mensagem"></textarea>
+                        </div>
+            
+                        <div class="text-left">
+                      <button type="submit" name="submit" class="btn btn-light btn-md btn-square btn-animate remove-margin"><span>Enviar <i class="ion-android-arrow-forward"></i></span></button>
+                    </div>
+                    </form>-->
+
+
+                        <form id="contact-form" action="##" method="post">
                             <div class="single-form">
                                 <input type="text" name="name" placeholder="Nome" required="required">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email" required="required" data-error="Coloque seu email!">
+                                <input type="email" name="email" placeholder="Email" required="required">
                             </div> <!-- single form -->
                             <div class="single-form">
                                 <textarea name="message" placeholder="Mensagem"></textarea>
@@ -621,27 +663,41 @@
 
     <!--====== BACK TOP TOP PART START ======-->
 
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <a href="#" class="back-to-top" style="bottom: 84px;"><i class="lni-chevron-up"></i></a>
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 	
-	
-	<!-- WhatsHelp.io widget 
+	<!-- WhatsHelp.io widget -->
 <script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+5551999757831", // WhatsApp number
-            call_to_action: "Posso ajudar?", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>-->
-<!-- /WhatsHelp.io widget -->
-	
+(function () {
+var options = {
+whatsapp: "+5551999757831", // WhatsApp number
+call_to_action: "Posso ajudar?", // Call to action
+position: "left", // Position may be 'right' or 'left'
+};
+var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+</script>
+<!-- /WhatsHelp.io widget --> 
+
+
+<script type="text/javascript">
+        var url= 'https://sinai.tomticket.com/scripts-chat/chat.min.js'
+        // <![CDATA[
+        + '?id=EP17436'
+        + '&autoOpen=0'
+        + '&hideWhenOffline=0'
+        + '&d=sinai'
+        + '&ts=' + new Date().getTime() + '&ref=' + encodeURIComponent(document.URL); document.writeln(' <scr'
+        + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
+        + 'ipt>');
+        //]]>
+        </script>
+
+
 
 
 
@@ -680,7 +736,6 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 	<script src="assets/js/formoid.min.js"></script>
-
 
 </body>
 
